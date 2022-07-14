@@ -29,7 +29,7 @@ public class StudentController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @GetMapping(value = "/getstudent",produces = "application/json")
+    @GetMapping(value = "/getstudents",produces = "application/json")
     public List<Student>  listacursos(){
         List<Student> listaCursos = studentService.getAll();
         return listaCursos;
