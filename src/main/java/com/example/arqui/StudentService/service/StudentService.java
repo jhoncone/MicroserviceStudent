@@ -13,8 +13,8 @@ import java.util.Optional;
 public class StudentService {
     @Autowired
     public StudentRepository studentRepository;
-    public Student guardar(Student curso){
-       return studentRepository.save(curso);
+    public Student guardar(Student student){
+       return studentRepository.save(student);
     }
 
     public List<Student> getAll() {
