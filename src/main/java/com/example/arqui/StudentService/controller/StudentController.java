@@ -24,7 +24,7 @@ public class StudentController {
 
 
     @PostMapping("/agregar")
-    public  ResponseEntity<?> guardarCurso(@RequestBody Student student){
+    public  ResponseEntity<?> guardar(@RequestBody Student student){
         studentService.guardar(student);
         return new ResponseEntity<>(HttpStatus.OK);
     }
