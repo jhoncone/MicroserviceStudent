@@ -18,5 +18,5 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String codalu;
-    private double nombre;
+    private String nombre;
 }
